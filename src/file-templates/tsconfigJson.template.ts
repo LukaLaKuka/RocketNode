@@ -1,14 +1,17 @@
-{
-  "exclude": ["node_modules/**/*", "templates/**/*"],
+export function getTSConfigJsonTemplate() {
+    return `{
+  "exclude": ["node_modules/**/*", "dist/**/*", "dist", "tests", "jest.config.ts"],
   "include": ["src/**/*"],
   "compilerOptions": {
     "target": "ESNext",
     "module": "CommonJS",
-    "rootDir": "src",
     "outDir": "dist",
+    "rootDir": "src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true
   }
+}
+`;
 }
