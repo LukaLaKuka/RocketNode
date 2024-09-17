@@ -5,12 +5,11 @@ import fs from "node:fs";
 import path from "node:path";
 import chalk from "chalk";
 import inquirer from "inquirer";
+import { version } from "./config/version";
 
 const program = new Command();
 
-export const version = '1.0.0';
-
-program.name("rocketnode").description("Repository to create faster project templates").version(version);
+program.name("rocketnode").description("NodeJS Project Template Generator").version(version());
 
 program
     .command('create')
@@ -38,7 +37,7 @@ program
 
         const projectDir = projectName === '.' || projectName === actualDirName ? process.cwd() : path.join(process.cwd(), projectName);
 
-        console.log(chalk.magenta(`Creating project in ${projectDir}`));
+        console.log(chalk.hex('#F6AD55')(`Creating project in ${projectDir}`));
     });
 
 program.parse(process.argv);
