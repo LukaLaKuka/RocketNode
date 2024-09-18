@@ -1,0 +1,17 @@
+{
+    "devDependencies": [
+        "typescript",
+        "ts-node",
+        "ts-node-dev",
+        "@types/node",
+        "jest",
+        "rimraf",
+        "supertest",
+        "ts-jest",
+        "@eslint/js",
+        "typescript-eslint",
+        "globals",
+        "eslint"
+    ],
+    "dependencies": []
+}
