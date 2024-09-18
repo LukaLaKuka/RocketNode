@@ -53,14 +53,14 @@ program
             try {
                 console.log(chalk.hex('#F6AD55')('Getting dependencies...'));
                 const { dependencies, devDependencies } = getDependencies(projectDir);
-                console.log(chalk.hex('#F6AD55')('Installing dependencies...'));
-                console.log(chalk.gray('Please wait'));
-                process.chdir(projectDir);
 
                 if (!devDependencies || !dependencies) {
                     console.error(chalk.red('Failed to install dependencies: dependencies.json not defined in the template'));
                     process.exit(1);
                 }
+
+                console.log(chalk.hex('#F6AD55')('Installing dependencies...'));
+                process.chdir(projectDir);
 
                 if (devDependencies.length > 0) {
                     const devDependenciesString = `npm install --save-dev ${devDependencies.join(' ')}`;
