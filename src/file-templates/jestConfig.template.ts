@@ -4,7 +4,7 @@ export function getJestConfigTemplate() {
 * https://jestjs.io/docs/configuration
 */
 
-import type { Config } from 'jest';
+import type { Config } from 'jest'
 
 const config: Config = {
  clearMocks: true,
@@ -13,8 +13,8 @@ const config: Config = {
  testEnvironment: "jest-environment-node",
  coverageDirectory: "coverage",
  coverageProvider: "v8",
-};
+}
 
-export default config;
-`;
+export default config
+`
 }

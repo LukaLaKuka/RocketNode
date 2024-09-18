@@ -1,6 +1,6 @@
 export function getTSConfigJsonTemplate() {
     return `{
-  "exclude": ["node_modules/**/*", "dist/**/*", "dist", "tests", "jest.config.ts"],
+  "exclude": ["node_modules/**/*", "dist/**/*", "dist", "tests", "tests/**/*", "jest.config.ts"],
   "include": ["src/**/*"],
   "compilerOptions": {
     "target": "ESNext",
@@ -13,5 +13,5 @@ export function getTSConfigJsonTemplate() {
     "skipLibCheck": true
   }
 }
-`;
+`
 }

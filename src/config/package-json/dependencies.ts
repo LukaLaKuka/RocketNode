@@ -16,7 +16,7 @@ export const commonDependencies = {
     prodDependencies: [
 
     ]
-};
+}
 
 export const webDependencies = {
     devDependencies: [
@@ -27,7 +27,7 @@ export const webDependencies = {
         ...commonDependencies.prodDependencies,
         'express',
     ]
-};
+}
 
 export const cliDependencies = {
     devDependencies: [
@@ -39,4 +39,4 @@ export const cliDependencies = {
         'commander',
         'chalk@4'
     ]
-};
+}

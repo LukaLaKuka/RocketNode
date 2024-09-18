@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsnd --clear --respawn src/index.ts",
     "build": "tsc",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run build && node dist/index.js",
+    "lint": "eslint ."
   },
   "bin": {
     "rocketnode": "dist/index.js"
