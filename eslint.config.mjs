@@ -1,12 +1,12 @@
-import globals from "globals"
-import pluginJs from "@eslint/js"
-import tseslint from "typescript-eslint"
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import tseslint from "typescript-eslint";
 
 
 export default [
   {
     rules: {
-      semi: ["error", "never"],
+      semi: ["error", "always"],
     }
   },
   {
@@ -26,4 +26,4 @@ export default [
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-]
+];

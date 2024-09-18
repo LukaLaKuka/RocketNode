@@ -1,3 +1,3 @@
 (async () => {
-    console.log(`Welcome to your CLI!`)
-})()
+    console.log(`Welcome to your CLI!`);
+})();

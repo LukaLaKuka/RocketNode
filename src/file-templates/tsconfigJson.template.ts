@@ -13,5 +13,5 @@ export function getTSConfigJsonTemplate() {
     "skipLibCheck": true
   }
 }
-`
+`;
 }

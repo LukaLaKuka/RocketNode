@@ -10,5 +10,5 @@ export function getPackageJsonTemplate(projectName: string) {
     "start": "npm run build && node dist/index.js"
   }
 }
-`
+`;
 }
