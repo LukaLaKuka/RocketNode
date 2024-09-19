@@ -60,7 +60,6 @@ For dependencies, create at the root of the template a file `dependencies.json` 
 
 ```json
 {
-    // Development Dependencies
     "devDependencies": [
         "typescript",
         "ts-node",
@@ -68,7 +67,6 @@ For dependencies, create at the root of the template a file `dependencies.json` 
         "@types/node",
         "jest"
     ],
-    // Production Dependencies
     "dependencies": [
         "express",
         "body-parser",
@@ -76,6 +74,10 @@ For dependencies, create at the root of the template a file `dependencies.json` 
     ]
 }
 ```
+
+`devDependencies` for development dependencies.
+
+`dependencies` for production dependencies.
 
 ## Future features:
 
